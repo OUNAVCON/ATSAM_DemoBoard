@@ -1,0 +1,95 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:ATSAMD21G18A-AU
+LIBS:ATSAMx21-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 4 4
+Title "Debugger Connections"
+Date "2018-02-05"
+Rev "A.0"
+Comp "Isaac Rose"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text GLabel 5900 2750 2    60   Input ~ 0
+RESET
+Text GLabel 5900 2300 2    60   Input ~ 0
+VDD
+Text GLabel 5900 2450 2    60   Input ~ 0
+SWDIO
+Text GLabel 5900 2600 2    60   Input ~ 0
+SWDCLK
+$Comp
+L GND #PWR?
+U 1 1 5A78E736
+P 5800 2850
+F 0 "#PWR?" H 5800 2600 50  0001 C CNN
+F 1 "GND" H 5800 2700 50  0000 C CNN
+F 2 "" H 5800 2850 50  0001 C CNN
+F 3 "" H 5800 2850 50  0001 C CNN
+	1    5800 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X05 J?
+U 1 1 5A78E814
+P 5600 2500
+F 0 "J?" H 5600 2800 50  0000 C CNN
+F 1 "JTAG" V 5700 2500 50  0000 C CNN
+F 2 "" H 5600 2500 50  0001 C CNN
+F 3 "" H 5600 2500 50  0001 C CNN
+	1    5600 2500
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	5800 2300 5900 2300
+Wire Wire Line
+	5900 2450 5900 2400
+Wire Wire Line
+	5900 2400 5800 2400
+Wire Wire Line
+	5800 2500 5900 2500
+Wire Wire Line
+	5900 2500 5900 2600
+Wire Wire Line
+	5800 2600 5850 2600
+Wire Wire Line
+	5850 2600 5850 2750
+Wire Wire Line
+	5850 2750 5900 2750
+Wire Wire Line
+	5800 2700 5800 2850
+$EndSCHEMATC
