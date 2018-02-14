@@ -81,7 +81,7 @@ Wire Wire Line
 Wire Wire Line
 	5900 2400 5800 2400
 Wire Wire Line
-	5800 2500 5900 2500
+	5800 2500 6700 2500
 Wire Wire Line
 	5900 2500 5900 2600
 Wire Wire Line
@@ -92,4 +92,20 @@ Wire Wire Line
 	5850 2750 5900 2750
 Wire Wire Line
 	5800 2700 5800 2850
+$Comp
+L R R?
+U 1 1 5A84BAB0
+P 6700 2350
+F 0 "R?" V 6780 2350 50  0000 C CNN
+F 1 "1k" V 6700 2350 50  0000 C CNN
+F 2 "" V 6630 2350 50  0001 C CNN
+F 3 "" H 6700 2350 50  0001 C CNN
+	1    6700 2350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6700 2100 6700 2200
+Connection ~ 5900 2500
+Text GLabel 6700 2100 1    60   Input ~ 0
+VDD
 $EndSCHEMATC
